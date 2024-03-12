@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS </title>
+    </head>
+    <body>
+        <h2>What can JS do?</h2>
+        <p id="demo"></p>
+        <script>
+         const person = {
+             fname: 'Maya',
+             lname:'ji',
+             fullName : function() {
+    return this.fname + " " + this.lname;
+  }
+    
+    };
+        document.getElementById('demo').innerHTML = person.fullName()
+
+        </script>
+        <!-- <script>
+        var person = {
+            fname: 'Maya',
+            lname: 'ji',
+            fullName: function() {
+                return this.fname + " " + this.lname;
+            }
+        };
+
+        document.getElementById('demo').innerHTML = person.fullName();
+    </script>-->
+    </body>
+</html>

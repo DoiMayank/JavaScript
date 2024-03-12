@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS OBJECTS</title>
+    </head>
+    <body>
+        <h2>We are going to create an object</h2>
+        <p id="demo"></p>
+        <script>
+            const person =
+            {
+                FirstName :'Robin',
+                LastName :'Jha',
+                Age : 26,
+                fullname: function() {
+                    return this.FirstName + " " + this.LastName;
+                }
+
+            };
+            document.getElementById('demo').innerHTML = 
+            person.FirstName + ' ' + person.LastName ; 
+        </script>
+    </body>
+</html>
